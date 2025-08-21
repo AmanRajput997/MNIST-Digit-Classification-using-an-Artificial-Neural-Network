@@ -2,7 +2,7 @@
 This project demonstrates a multi-class classification task to predict handwritten digits using the well-known MNIST dataset. The prediction is accomplished by building and training an Artificial Neural Network (ANN) with the help of the TensorFlow and Keras libraries.
 
 
-Dataset
+Dataset : 
 The project utilizes the MNIST (Modified National Institute of Standards and Technology) database, which is a large collection of handwritten digits. It is a standard dataset for benchmarking image classification algorithms.
 
 • Dataset Size:
@@ -14,7 +14,7 @@ The project utilizes the MNIST (Modified National Institute of Standards and Tec
 • Link to the Dataset: The dataset is conveniently loaded directly through the keras.datasets.mnist.load_data() function within the notebook. More information can be found at the [official MNIST database website.](http://yann.lecun.com/exdb/mnist/)
 
 
-Dependencies
+Dependencies : 
 To run this notebook, you will need the following Python libraries installed:
 
 • TensorFlow: An end-to-end open-source platform for machine learning.
@@ -27,7 +27,7 @@ To run this notebook, you will need the following Python libraries installed:
 
 
 
-Model Architecture
+Model Architecture : 
 An Artificial Neural Network (ANN) is constructed using a Sequential model from Keras. The architecture is as follows:
 
 1. Flatten Layer: This layer converts the 2D image data (28x28 pixels) into a 1D array of 784 neurons, which serves as the input to the network.
@@ -39,7 +39,7 @@ An Artificial Neural Network (ANN) is constructed using a Sequential model from 
 4. Dense Layer 3 (Output Layer): The final output layer with 10 neurons (one for each digit from 0 to 9) and a Softmax activation function. The softmax function outputs a probability distribution over the 10 classes.
 
 
-Training
+Training : 
 The model is compiled and trained with the following parameters:
 
 • Loss Function: sparse_categorical_crossentropy is used, which is suitable for multi-class classification problems where the labels are integers.
@@ -53,7 +53,7 @@ The model is compiled and trained with the following parameters:
 • Validation Split: 20% of the training data is used for validation to monitor the model's performance on unseen data during training.
 
 
-Results
+Results : 
 The model's performance is evaluated on the test set, and the training history is visualized to observe the changes in loss and accuracy over epochs.
 
 • Accuracy: The final accuracy on the test set is approximately 98.04%.
@@ -64,7 +64,7 @@ The model's performance is evaluated on the test set, and the training history i
 
  • The accuracy plot shows the training and validation accuracy increasing, which is the expected behavior.
 
-How to Run
+How to Run : 
 1. Ensure you have the required dependencies installed.
 2. Open the MNIST_Classification.ipynb file in a Jupyter Notebook environment.
 
